@@ -1,0 +1,18 @@
+mount | grep ntfs
+fuser -vm /mnt/ntfs
+sudo umount /mnt/ntfs
+sudo umount -l /mnt/ntfs
+sudo mount -t ntfs-3g -o rw /dev/sdX1 /mnt/ntfs
+sudo ntfsfix /dev/sdX1
+
+
+
+#nvidia-drivers
+sudo pacman -Syu nvidia nvidia-utils nvidia-settings
+
+
+#Для ntfs-disks linux
+
+
+#icons
+sudo pacman -S ttf-font-awesome ttf-nerd-fonts-symbols
